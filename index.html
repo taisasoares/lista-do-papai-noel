@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Title</title>
+    <link rel="icon" href="icon.png" type="image/icon type" />
+
+    <meta charset="UTF-8" />
+    <meta name="description" content="Texto descritivo da página web" />
+    <meta name="author" content="Taisa Soares" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="style.CSS" />
+  </head>
+
+  <body>
+    <header role="banner"></header>
+
+    <main role="main"></main>
+
+    <footer role="contentinfo">&copy;Taisa</footer>
+
+    <script type="text/javascript" src="script.JS"></script>
+  </body>
+</html>
+
+<!--Lembrar de:
+
+1. Modificar o lang para textos que estiverem em outra língua
+    <p lang="en">
+      Hello
+    </p>
+
+2. Add AriaLabel para descrever funcionalidades de botões
+    <button aria-label="função botão">
+      Mais
+    </button>
+
+3. Para tabelas lembrar de add: summary, caption, abbr, scope
+    <table summary="Aqui vc faz um resumo do conteúdo da tabela">
+      <caption>Tabela 1 (Nome table)</caption>
+
+      <thead>
+        <tr>
+          <th abbr="Mês(palavra principal)" scope="col">Mês da Atividade</th>
+          <th abbr="Atividade" scope="col">Nome da Atividade</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">Janeiro</th>
+          <td>Leitura</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td>1 atividade</td>
+        </tr>
+      </tfoot>
+    </table>
+
+4. Add aria-level
+    <nav role="navigation" aria-level="main navigation">
+      <ul role="menu">
+        <li>
+          <a href="#" role="menuitem">Home</a>
+        </li>
+    </nav>
+
+5. Add aria-labelledby
+    <img
+      src="https://i.pinimg.com/originals/99/64/a5/9964a544b233867de40761e455398ced.png"
+      alt="(texto alternativo)"
+      title="(texto que aparece ao passar o mouse)"
+      aria-labelledby="description-image"
+    />
+
+    <p id="description-image">Texto descrevendo a imagem</p>
+-->
