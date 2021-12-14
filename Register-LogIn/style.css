@@ -4,9 +4,10 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Nunito", sans-serif;
+  color: #000000;
 }
 
-body {
+html {
   background-color: #eef1fc;
 }
 
@@ -18,33 +19,77 @@ body {
   top: 32px;
 }
 
-/* Imagem da esquerda */
-#principalImage {
+/* CONTEÚDOS DA ESQUERDA */
+
+/* Imagem */
+#cat,
+#dots,
+#circle {
   position: absolute;
-  width: 633px;
-  height: 633.74px;
-  left: 88px;
-  top: 62px;
 }
 
 #cat {
-  position: absolute;
-  z-index: 3;
+  width: 520px;
+  height: 560px;
+  left: 130px;
+  top: 25px;
+
+  z-index: 2;
+}
+
+#dots {
+  width: 160px;
+  height: 207px;
+  left: 449px;
+  top: 319px;
+
+  z-index: 1;
 }
 
 #circle {
-  position: absolute;
-  width: 388.23px;
-  height: 388.23px;
-  z-index: 0;
-  left: 122px;
-  top: 110px;
+  width: 325px;
+  height: 375px;
+  height: 325px;
+  left: 221px;
+  top: 155px;
 
-  background: #f9e1f9;
+  z-index: 0;
+
+  background: rgb(249, 225, 249);
   border-radius: 346px;
+}
+
+/* Textos */
+#h1Info,
+#pInfo {
+  position: absolute;
+  font-style: normal;
+  text-align: center;
+}
+
+#h1Info {
+  width: 367px;
+  height: 59px;
+  left: 205px;
+  top: 525px;
+
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+#pInfo {
+  width: 436px;
+  height: 90px;
+  left: 170px;
+  top: 605px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 #credits {
   color: #000;
-  font-size: 12pxeef1fc;
+  font-size: 12px;
 }
