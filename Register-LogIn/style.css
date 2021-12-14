@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #eef1fc;
+}
+
+#logo {
+  position: absolute;
+  width: 171px;
+  height: 76px;
+  left: 32px;
+  top: 32px;
+}
+
+/* Imagem da esquerda */
+#principalImage {
+  position: absolute;
+  width: 633px;
+  height: 633.74px;
+  left: 88px;
+  top: 62px;
+}
+
+#cat {
+  position: absolute;
+  z-index: 3;
+}
+
+#circle {
+  position: absolute;
+  width: 388.23px;
+  height: 388.23px;
+  z-index: 0;
+  left: 122px;
+  top: 110px;
+
+  background: #f9e1f9;
+  border-radius: 346px;
+}
+
+#credits {
+  color: #000;
+  font-size: 12pxeef1fc;
+}
