@@ -26,7 +26,9 @@
     </header>
 
     <main role="main">
+      <!-- Itens da esquerda -->
       <div class="rightInfos">
+        <!-- Imagem -->
         <div id="principalImage">
           <img
             id="cat"
@@ -43,6 +45,7 @@
           <div id="circle"></div>
         </div>
 
+        <!-- Textos -->
         <div id="infos">
           <h1 id="h1Info">Hora de se inscrever na lista do Papai Noel!</h1>
 
@@ -54,7 +57,92 @@
         </div>
       </div>
 
+      <!-- Itens da direita -->
       <div id="login">
+        <!-- Frases iniciais -->
+        <div>
+          <h1 id="h1Login">Olá, como tá o coraçãozinho pro Natal?</h1>
+
+          <p id="pLogin">
+            Não tem conta?
+            <a class="links" href="/Register-LogIn/register.html"
+              >Se Registre</a
+            >
+          </p>
+        </div>
+
+        <!-- Input Field -->
+        <div id="inputField">
+          <form onsubmit="event.preventDefault(); submitForm();">
+            <label>
+              <input
+                type="email"
+                name="emailInput"
+                id="emailInput"
+                placeholder="Email"
+                class="input"
+              />
+            </label>
+
+            <label>
+              <input
+                type="password"
+                name="passwordInput"
+                id="passwordInput"
+                placeholder="Senha"
+                class="input"
+              />
+              <img id="eye" src="/images/eye.svg" />
+            </label>
+
+            <button
+              type="submit"
+              name="submitButton"
+              aria-label="Botão para fazer login"
+            >
+              Entrar
+            </button>
+          </form>
+
+          <div id="passwordAction">
+            <div id="remember">
+              <img id="check" src="../images/remember-check.svg" />
+              <p id="pRemember">Lembrar senha</p>
+            </div>
+
+            <div id="forgot">
+              <a class="links" href="/Recuperar-senha/recoverpassword.html"
+                >Esqueci minha senha</a
+              >
+            </div>
+          </div>
+
+          <div id="remember"></div>
+        </div>
+
+        <!-- Entrar com -->
+        <div id="socialTitle">
+          <p>ou continue com</p>
+          <div id="lineL"></div>
+          <div id="lineR"></div>
+        </div>
+
+        <div id="socialLogin">
+          <img
+            id="google"
+            src="../images/google.svg"
+            alt="Login com o Google"
+          />
+
+          <img
+            id="facebook"
+            src="../images/facebook.svg"
+            alt="Login com o Facebook"
+          />
+
+          <img id="apple" src="../images/apple.svg" alt="Login com a Apple" />
+        </div>
+
         <div id="backgroundLogin"></div>
       </div>
     </main>
@@ -63,7 +151,7 @@
     <footer role="contentinfo">
       <p id="credits">
         criado com ❤ por
-        <a id="linkGithub" href="https://github.com/TaisaSoares" target="_blank"
+        <a class="links" href="https://github.com/TaisaSoares" target="_blank"
           >Taisa Soares</a
         >
       </p>
@@ -72,60 +160,3 @@
     <script type="text/javascript" src="script.JS"></script>
   </body>
 </html>
-
-<!--Lembrar de:
-
-1. Modificar o lang para textos que estiverem em outra língua
-    <p lang="en">
-      Hello
-    </p>
-
-2. Add AriaLabel para descrever funcionalidades de botões
-    <button aria-label="função botão">
-      Mais
-    </button>
-
-3. Para tabelas lembrar de add: summary, caption, abbr, scope
-    <table summary="Aqui vc faz um resumo do conteúdo da tabela">
-      <caption>Tabela 1 (Nome table)</caption>
-
-      <thead>
-        <tr>
-          <th abbr="Mês(palavra principal)" scope="col">Mês da Atividade</th>
-          <th abbr="Atividade" scope="col">Nome da Atividade</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <th scope="row">Janeiro</th>
-          <td>Leitura</td>
-        </tr>
-      </tbody>
-
-      <tfoot>
-        <tr>
-          <td>Total</td>
-          <td>1 atividade</td>
-        </tr>
-      </tfoot>
-    </table>
-
-4. Add aria-level
-    <nav role="navigation" aria-level="main navigation">
-      <ul role="menu">
-        <li>
-          <a href="#" role="menuitem">Home</a>
-        </li>
-    </nav>
-
-5. Add aria-labelledby
-    <img
-      src="https://i.pinimg.com/originals/99/64/a5/9964a544b233867de40761e455398ced.png"
-      alt="(texto alternativo)"
-      title="(texto que aparece ao passar o mouse)"
-      aria-labelledby="description-image"
-    />
-
-    <p id="description-image">Texto descrevendo a imagem</p>
--->

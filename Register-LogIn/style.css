@@ -14,7 +14,7 @@ html {
 #logo {
   position: absolute;
   width: 225px;
-  height: 110px px;
+  height: 110px;
   left: 32px;
   top: 32px;
 }
@@ -44,11 +44,12 @@ html {
   top: 319px;
 
   z-index: 1;
+
+  animation: pulse 3s infinite;
 }
 
 #circle {
   width: 325px;
-  height: 375px;
   height: 325px;
   left: 221px;
   top: 155px;
@@ -57,6 +58,20 @@ html {
 
   background: rgb(249, 225, 249);
   border-radius: 346px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1) rotateZ(-10deg);
+  }
+
+  50% {
+    transform: scale(0.9) rotateZ(-10deg);
+  }
+
+  100% {
+    transform: scale(1) rotateZ(-10deg);
+  }
 }
 
 /* Textos */
@@ -99,25 +114,232 @@ html {
   height: 720px;
   left: 800px;
 
+  z-index: 0;
+
   background: #ffffff;
   box-shadow: 0px 4px 65px rgb(0 0 0 / 25%);
 }
 
 /* Área de login */
 
+#h1Login,
+#pLogin {
+  position: absolute;
+  width: 454px;
+  left: 885px;
+
+  z-index: 1;
+}
+
+#h1Login {
+  height: 90px;
+  top: 55px;
+
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 100%;
+
+  letter-spacing: -0.005em;
+}
+
+#pLogin {
+  height: 30px;
+  top: 140px;
+
+  font-size: 24px;
+  line-height: 33px;
+
+  letter-spacing: 0.1em;
+  color: #444b59;
+}
+
+/* Formulário */
+
+form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  top: 180px;
+  width: 735px;
+  height: 350px;
+  left: 800px;
+
+  z-index: 1;
+}
+
+#emailInput,
+#passwordInput,
+button {
+  position: static;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  font-size: 22px;
+  width: 525px;
+  height: 60px;
+  top: 40px;
+  margin-top: 25px;
+}
+
+#emailInput,
+#passwordInput {
+  background: #ffffff;
+
+  padding: 1px 35px;
+  border: 2px solid #789ade;
+  box-sizing: border-box;
+  border-radius: 80px;
+}
+
+#eye {
+  position: absolute;
+  width: 25px;
+  height: 32px;
+  left: 570px;
+  top: 125px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
+
+#passwordAction {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  top: 355px;
+  width: 735px;
+  height: 50px;
+  left: 800px;
+  z-index: 1;
+}
+
+#remember {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#check {
+  cursor: pointer;
+}
+
+#pRemember {
+  padding-left: 8px;
+}
+
+button {
+  position: relative;
+  text-align: center;
+
+  color: white;
+
+  padding: 21px 195px;
+
+  background: #8699da;
+  box-shadow: 4px 8px 12px rgb(78 99 141 / 6%),
+    inset 0px 4px 12px rgb(200 211 249 / 60%);
+  border-radius: 80px;
+
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+
+  transition: 200ms ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#socialTitle {
+  position: absolute;
+  width: 735px;
+  height: 20px;
+  left: 800px;
+  top: 515px;
+  text-align: center;
+  font-size: 18px;
+  z-index: 1;
+}
+
+#lineL,
+#lineR {
+  position: absolute;
+  width: 100px;
+  height: 0px;
+  top: 13px;
+
+  background: #c8d3f9;
+  border-radius: 95px;
+  border: 1px solid #c8d3f9;
+}
+
+#lineL {
+  left: 193px;
+}
+
+#lineR {
+  left: 440px;
+}
+
+#socialLogin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 20px;
+  position: absolute;
+  width: 700px;
+  height: 45px;
+  left: 820px;
+  top: 575px;
+
+  z-index: 1;
+}
+
+#google,
+#facebook,
+#apple {
+  position: static;
+  width: 100px;
+  height: 75px;
+  padding: 18px;
+  left: 0px;
+  top: 0px;
+
+  border: 3px solid #789ade;
+  box-sizing: border-box;
+  border-radius: 12px;
+
+  cursor: pointer;
+}
+
 /* Créditos */
 
 #credits {
   position: absolute;
-  width: 230px;
-  height: 25px;
-  left: 1090px;
+  text-align: center;
+  width: 735px;
+  height: 50px;
+  left: 800px;
   top: 671px;
   color: #000;
   align-items: center;
 }
 
-#linkGithub {
+.links {
   font-weight: bold;
   color: #8699da;
 }
