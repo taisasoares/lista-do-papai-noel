@@ -19,7 +19,6 @@ function validateEmail(email) {
 }
 
 function saveData(email, password) {
-  document.getElementById("emailInput").style.border = "none";
   localStorage.setItem("emailInput", email);
   localStorage.setItem("passwordInput", password);
 
