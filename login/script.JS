@@ -1,4 +1,5 @@
 function submitForm() {
+  console.log("submitForm");
   var email = document.getElementById("emailInput").value;
   var password = document.getElementById("passwordInput").value;
 
@@ -7,7 +8,7 @@ function submitForm() {
   }
 }
 
-function validateName(email) {
+function validateEmail(email) {
   if (email == "") {
     document.getElementById("emailInput").style.border = "1px solid #c62447";
     alert("Por favor insira seu email!");
